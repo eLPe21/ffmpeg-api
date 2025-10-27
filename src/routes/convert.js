@@ -55,7 +55,7 @@ function convert(req,res,next) {
     {
         if (format === "mp3")
         {
-            ffmpegParams.outputOptions=['-codec:a libmp3lame', '-qscale:a' ];
+            ffmpegParams.outputOptions=['-codec:a libmp3lame', '-qscale:a 2' ];
         }
         if (format === "wav")
         {
