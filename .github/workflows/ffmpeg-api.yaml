@@ -13,7 +13,7 @@ jobs:
   ffmpeg-api-container-build-and-push:
     uses: ./.github/workflows/reusable-container-build-and-push.yaml
     with:
-      imagename: kazhar/ffmpeg-api
+      imagename: elpe21/ffmpeg-api
       tagname: $GITHUB_REF_NAME
       dockerfile: ./Dockerfile
       directory: .
